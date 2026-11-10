@@ -1,6 +1,6 @@
 {
-  "versionCode": 3,
-  "versionName": "0.1.2",
+  "versionCode": 4,
+  "versionName": "0.1.3",
   "apkUrl": "https://israel8307.github.io/recw/RecW.apk",
-  "notes": "שיחת הבדיקה בהגדרה הראשונית מסבירה מה לעשות בטלפונים שבהם הצד השני נשמע חלש."
+  "notes": "העיגול של כל שיחה צבוע לפי הכיוון: יוצאת בירוק, נכנסת באדום."
 }
