@@ -73,6 +73,16 @@ ol.steps strong { display: block; }
 ol.steps span { color: var(--muted); }
 .note { background: var(--card-2); border-right: 4px solid var(--red); border-radius: 0; padding: 14px 18px; margin: 16px 0; }
 
+/* Expandable illustrated guide (e.g. Play Protect) */
+details.guide { background: var(--card); border: 1px solid var(--red); border-radius: var(--radius); padding: 16px 20px; margin: 16px 0; }
+details.guide summary { cursor: pointer; font-weight: 700; }
+details.guide .guide-body { margin-top: 12px; }
+details.guide .guide-body p { color: var(--muted); }
+details.guide ol.steps li { background: var(--card-2); }
+details.guide figure { margin: 16px auto; text-align: center; }
+details.guide figure img { max-width: 280px; width: 100%; height: auto; border-radius: 16px; border: 1px solid var(--line); }
+details.guide figcaption { color: var(--muted); font-size: 15px; margin-top: 6px; }
+
 /* FAQ */
 details { background: var(--card); border-radius: var(--radius); padding: 16px 20px; margin-bottom: 10px; }
 summary { cursor: pointer; font-weight: 600; }
