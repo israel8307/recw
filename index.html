@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RecW — הקלטת שיחות וואטסאפ אוטומטית באנדרואיד</title>
+  <meta name="description" content="RecW מקליטה כל שיחת וואטסאפ אוטומטית, באפליקציה אחת ובלי Helper. שומרת את השיחות החשובות לתמיד, מוחקת לבד את הישנות, וההקלטות לא יוצאות מהטלפון.">
+  <meta property="og:title" content="RecW — כל שיחת וואטסאפ מוקלטת. אוטומטית.">
+  <meta property="og:description" content="אפליקציה אחת, בלי Helper. החשובות נשמרות לתמיד, ההקלטות לא יוצאות מהטלפון.">
+  <meta property="og:image" content="assets/icon.png">
+  <meta property="og:locale" content="he_IL">
+  <meta name="theme-color" content="#0b0b0e">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="site">
+    <div class="wrap">
+      <a href="./" aria-label="RecW — עמוד הבית"><img src="assets/wordmark.png" alt="RecW"></a>
+      <nav>
+        <a href="#install">התקנה</a>
+        <a href="#faq">שאלות נפוצות</a>
+        <a href="guides/record-whatsapp-call.html">מדריך</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <img class="icon" src="assets/icon.png" alt="" width="120" height="120">
+        <h1>כל שיחת וואטסאפ מוקלטת.<br>אוטומטית.</h1>
+        <p class="sub">באפליקציה אחת. בלי Helper. בלי ללחוץ על כלום.</p>
+        <a class="btn" href="RecW.apk" download id="download">⬇ הורדה לאנדרואיד</a>
+        <p class="small">גרסה <span id="ver">0.1.0</span> · אנדרואיד 10 ומעלה · חינם</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap grid">
+        <div class="card">
+          <div class="emoji" aria-hidden="true">🎙️</div>
+          <h3>מקליטה לבד</h3>
+          <p>כל שיחת וואטסאפ ווואטסאפ עסקים מוקלטת מהרגע שעונים. בסוף השיחה מופיעה התראה, ולחיצה אחת משמיעה אותה.</p>
+        </div>
+        <div class="card">
+          <div class="emoji" aria-hidden="true">⭐</div>
+          <h3>החשובות נשמרות לתמיד</h3>
+          <p>סמן ⭐ שיחה חשובה והיא לא תימחק לעולם. את הישנות RecW מוחקת לבד, כך שהטלפון לא מתמלא.</p>
+        </div>
+        <div class="card">
+          <div class="emoji" aria-hidden="true">🔒</div>
+          <h3>ההקלטות לא יוצאות מהטלפון</h3>
+          <p>אין שרת, אין חשבון, אין מעקב. הקלטה יוצאת מהטלפון רק כשאתה משתף או מגבה אותה לדרייב.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="install">
+      <div class="wrap">
+        <h2>התקנה ב-3 דקות</h2>
+        <ol class="steps">
+          <li><strong>מורידים את הקובץ</strong><span>לוחצים על "הורדה לאנדרואיד" למעלה, מהטלפון.</span></li>
+          <li><strong>מאשרים התקנה מהדפדפן</strong><span>אנדרואיד ישאל אם לאפשר לדפדפן להתקין אפליקציות. לוחצים "הגדרות" ← מפעילים "אפשר מהמקור הזה" ← חוזרים.</span></li>
+          <li><strong>מתקינים ופותחים את RecW</strong><span>האפליקציה מדריכה צעד-צעד: הרשאת נגישות, גישה להתראות ומיקרופון. כל שלב מקבל ✓.</span></li>
+          <li><strong>"הגדרה מוגבלת"? זה תקין</strong><span>באנדרואיד 13 ומעלה, לאפליקציה שלא מהחנות צריך לאשר פעם אחת: פרטי אפליקציה ← ⋮ למעלה ← "אפשר הגדרות מוגבלות". RecW מראה בדיוק איפה.</span></li>
+          <li><strong>שיחת בדיקה</strong><span>מתקשרים לחבר בוואטסאפ, מנתקים, ושומעים את ההקלטה. אם שומעים את שני הצדדים — סיימת.</span></li>
+        </ol>
+        <p class="note">למה לא בחנות של גוגל? הכללים של Google Play לא מאפשרים לאפליקציה אחת להקליט שיחות וואטסאפ, ולכן אפליקציות אחרות דורשות להתקין גם "Helper" נפרד. RecW מופצת מהאתר כקובץ חתום, ולכן היא אפליקציה אחת.</p>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap">
+        <h2>שאלות נפוצות</h2>
+        <details>
+          <summary>שומעים את שני הצדדים?</summary>
+          <p>כן, במכשירים שנבדקו. נבדק עד עכשיו על Samsung Galaxy S24 Ultra עם אנדרואיד 17. בסוף ההתקנה יש שיחת בדיקה, ואם משהו לא נשמע טוב RecW מנסה הגדרת הקלטה אחרת.</p>
+        </details>
+        <details>
+          <summary>מה עם וואטסאפ עסקים?</summary>
+          <p>נתמך. אפשר לכבות את זה בהגדרות.</p>
+        </details>
+        <details>
+          <summary>איפה ההקלטות נשמרות?</summary>
+          <p>בזיכרון הפרטי של האפליקציה בטלפון. אפליקציות אחרות לא רואות אותן. אפשר לשתף הקלטה, או לגבות את השיחות החשובות ל-Google Drive בלחיצה.</p>
+        </details>
+        <details>
+          <summary>כמה שיחות נשמרות?</summary>
+          <p>בוחרים: 20, 50, 100, 200 או הכול. שיחות עם ⭐ לא נמחקות אף פעם.</p>
+        </details>
+        <details>
+          <summary>מה אם ההקלטה נכשלה?</summary>
+          <p>RecW לא נכשלת בשקט. אם הקלטה יוצאת שקטה או שהרשאה כבויה, מופיעה התראה ופס אדום עם כפתור "תקן".</p>
+        </details>
+        <details>
+          <summary>כמה זה עולה?</summary>
+          <p>חינם.</p>
+        </details>
+        <details>
+          <summary>יש לאייפון?</summary>
+          <p>לא. אפל לא מאפשרת להקליט שיחות וואטסאפ באייפון.</p>
+        </details>
+        <details>
+          <summary>מותר להקליט שיחות?</summary>
+          <p>חוקי הקלטת שיחות משתנים בין מדינות. האחריות לשימוש חוקי ב-RecW היא על המשתמש.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site">
+    <div class="wrap">
+      <p><a href="guides/record-whatsapp-call.html">איך מקליטים שיחת וואטסאפ באנדרואיד</a></p>
+      <p>חוקי הקלטת שיחות משתנים בין מדינות. האחריות לשימוש חוקי ב-RecW היא על המשתמש.</p>
+      <p>© RecW</p>
+    </div>
+  </footer>
+
+  <script>
+    // Show the current version from version.json (same file the app checks).
+    fetch('version.json', { cache: 'no-store' })
+      .then(function (r) { return r.json(); })
+      .then(function (v) {
+        document.getElementById('ver').textContent = v.versionName;
+        if (v.apkUrl) document.getElementById('download').href = v.apkUrl;
+      })
+      .catch(function () { /* keep defaults */ });
+  </script>
+</body>
+</html>

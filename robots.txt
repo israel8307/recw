@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://israel8307.github.io/recw/sitemap.xml
