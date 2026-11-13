@@ -12,12 +12,14 @@
   <meta name="theme-color" content="#0b0b0e">
   <link rel="icon" href="assets/favicon.png">
   <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/accessibility.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">דילוג לתוכן</a>
   <header class="site">
     <div class="wrap">
       <a href="./" aria-label="RecW — עמוד הבית"><img src="assets/wordmark.png" alt="RecW"></a>
-      <nav>
+      <nav aria-label="ניווט ראשי">
         <a href="#install">התקנה</a>
         <a href="#faq">שאלות נפוצות</a>
         <a href="guides/record-whatsapp-call.html">מדריך</a>
@@ -25,18 +27,22 @@
     </div>
   </header>
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <section class="hero">
-      <div class="wrap">
+      <div class="wrap hero-frame">
         <img class="icon" src="assets/icon.png" alt="" width="120" height="120">
+        <div class="hero-copy">
         <h1>כל שיחת וואטסאפ מוקלטת.<br>אוטומטית.</h1>
         <p class="sub">באפליקציה אחת. בלי Helper. בלי ללחוץ על כלום.</p>
         <a class="btn" href="RecW.apk" download id="download">⬇ הורדה לאנדרואיד</a>
+        <a class="hero-help" href="#install">מדריך התקנה</a>
         <p class="small">גרסה <span id="ver">0.1.6</span> · אנדרואיד 10 ומעלה · חינם</p>
+        </div>
       </div>
     </section>
 
-    <section>
+    <section class="features" aria-labelledby="features-title">
+      <div class="wrap"><h2 id="features-title">מה RecW עושה</h2></div>
       <div class="wrap grid">
         <div class="card">
           <div class="emoji" aria-hidden="true">🎙️</div>
@@ -60,45 +66,16 @@
       <div class="wrap">
         <h2>התקנה ב-5 דקות</h2>
         <ol class="steps">
-          <li><strong>מכבים זמנית את Play Protect</strong><span>גוגל חוסמת התקנה מהאתר של אפליקציות שמבקשות הרשאת נגישות — וכל מקליט שיחות וואטסאפ חייב אותה (<a href="#play-protect">מדריך עם תמונות למטה</a>). לכן לפני ההתקנה: פותחים את <b>Play Store</b> ← לוחצים על תמונת הפרופיל למעלה ← <b>Play Protect</b> ← ⚙ למעלה ← מכבים את <b>"סריקת אפליקציות באמצעות Play Protect"</b>.</span></li>
+
           <li><strong>מורידים את הקובץ</strong><span>לוחצים על "הורדה לאנדרואיד" למעלה, מהטלפון.</span></li>
           <li><strong>מאשרים התקנה מהדפדפן</strong><span>אנדרואיד ישאל אם לאפשר לדפדפן להתקין אפליקציות. לוחצים "הגדרות" ← מפעילים "אפשר מהמקור הזה" ← חוזרים.</span></li>
-          <li><strong>מתקינים ומדליקים בחזרה את Play Protect</strong><span>אחרי שההתקנה הסתיימה, חוזרים ל-Play Store ← Play Protect ← ⚙ ומדליקים שוב את הסריקה. כך הטלפון ממשיך להיות מוגן.</span></li>
+          <li><strong>מתקינים את RecW</strong><span>פתחו את קובץ ההתקנה שהורדתם ופעלו לפי ההנחיות של אנדרואיד.</span></li>
           <li><strong>פותחים את RecW</strong><span>האפליקציה מדריכה צעד-צעד: הרשאת נגישות, גישה להתראות ומיקרופון. כל שלב מקבל ✓.</span></li>
           <li><strong>"הגדרה מוגבלת"? זה תקין</strong><span>באנדרואיד 13 ומעלה, לאפליקציה שלא מהחנות צריך לאשר פעם אחת: פרטי אפליקציה ← ⋮ למעלה ← "אפשר הגדרות מוגבלות". RecW מראה בדיוק איפה.</span></li>
           <li><strong>שיחת בדיקה</strong><span>מתקשרים לחבר בוואטסאפ, מנתקים, ושומעים את ההקלטה. אם שומעים את שני הצדדים — סיימת.</span></li>
         </ol>
 
-        <details class="guide" id="play-protect">
-          <summary>🛡️ הופיע "האפליקציה נחסמה כדי להגן על המכשיר"? כך ממשיכים — מדריך עם תמונות</summary>
-          <div class="guide-body">
-            <p>אם שכחת לכבות את Play Protect לפני ההתקנה, תופיע ההודעה הזו. היא מופיעה לכל מקליט שיחות וואטסאפ מחוץ לחנות, כי כולם צריכים הרשאת נגישות. לוחצים <b>"הבנתי"</b> וממשיכים:</p>
-            <figure>
-              <img src="assets/guide/play-protect-blocked.png" alt="חלון Google Play Protect: האפליקציה נחסמה כדי להגן על המכשיר" loading="lazy" width="812" height="980">
-              <figcaption>ההודעה של Play Protect. לוחצים "הבנתי".</figcaption>
-            </figure>
-            <ol class="steps">
-              <li><strong>פותחים את Play Store</strong><span>האפליקציה של חנות גוגל, עם המשולש הצבעוני.</span></li>
-              <li><strong>לוחצים על תמונת הפרופיל</strong><span>העיגול עם התמונה או האות שלך, בפינה העליונה.</span></li>
-              <li><strong>בוחרים "Play Protect"</strong><span>ואז לוחצים על גלגל השיניים ⚙ בפינה העליונה.</span></li>
-            </ol>
-            <figure>
-              <img src="assets/guide/play-protect-main.png" alt="מסך Play Protect, גלגל השיניים מסומן בעיגול אדום בפינה העליונה" loading="lazy" width="1080" height="910">
-              <figcaption>לוחצים על גלגל השיניים ⚙ (מסומן באדום).</figcaption>
-            </figure>
-            <ol class="steps" start="4">
-              <li><strong>מכבים את "סריקת אפליקציות באמצעות Play Protect"</strong><span>מופיעה שאלה אם לכבות — מאשרים.</span></li>
-            </ol>
-            <figure>
-              <img src="assets/guide/play-protect-settings.png" alt="מסך ההגדרות של Play Protect, המתג סריקת אפליקציות מסומן בעיגול אדום" loading="lazy" width="1080" height="910">
-              <figcaption>המתג העליון, "סריקת אפליקציות באמצעות Play Protect" (מסומן באדום). מכבים אותו לדקה.</figcaption>
-            </figure>
-            <ol class="steps" start="5">
-              <li><strong>חוזרים לקובץ ומתקינים</strong><span>פותחים שוב את RecW.apk מההורדות (או מורידים שוב מהכפתור למעלה) ולוחצים "התקן".</span></li>
-              <li><strong>מדליקים בחזרה את Play Protect</strong><span>אותה דרך: Play Store ← פרופיל ← Play Protect ← ⚙ ← מדליקים את הסריקה. RecW נשארת מותקנת וממשיכה לעבוד.</span></li>
-            </ol>
-          </div>
-        </details>
+        <details class="guide" id="play-protect"><summary>מה עושים אם Play Protect חוסם את ההתקנה?</summary><p>השאירו את Play Protect פעיל. אם ההתקנה נחסמה, אפשר לפנות אלינו בכתובת <a href="mailto:isr.service12@gmail.com">isr.service12@gmail.com</a> ולצרף את נוסח ההודעה.</p></details>
 
         <p class="note">למה לא בחנות של גוגל? הכללים של Google Play לא מאפשרים לאפליקציה אחת להקליט שיחות וואטסאפ, ולכן אפליקציות אחרות דורשות להתקין גם "Helper" נפרד. RecW מופצת מהאתר כקובץ חתום, ולכן היא אפליקציה אחת.</p>
       </div>
@@ -107,10 +84,7 @@
     <section id="faq">
       <div class="wrap">
         <h2>שאלות נפוצות</h2>
-        <details>
-          <summary>למה צריך לכבות את Play Protect? זה בטוח?</summary>
-          <p>Play Protect חוסם כל אפליקציה מחוץ לחנות שמבקשת הרשאת נגישות, בלי לבדוק מה היא עושה — כי נוכלים משתמשים בהרשאה הזו. RecW צריכה אותה רק כי אנדרואיד מאפשר להקליט בזמן שיחה רק לאפליקציה עם שירות נגישות. השירות של RecW מוגבל לוואטסאפ, לא קורא את המסך ולא שולח שום מידע — ההקלטות לא יוצאות מהטלפון. מכבים את Play Protect רק לדקה של ההתקנה ומדליקים בחזרה. פרטים מלאים ב<a href="privacy.html">מדיניות הפרטיות</a>.</p>
-        </details>
+
         <details>
           <summary>שומעים את שני הצדדים?</summary>
           <p>ברוב הטלפונים החדשים כן. נבדק עם שני הצדדים ברורים על Samsung Galaxy S24 Ultra (אנדרואיד 17). בחלק מהטלפונים, בעיקר עם אנדרואיד 10, המערכת לא מאפשרת להקליט ברור את הצד השני: הקול שלך מוקלט טוב והצד השני חלש. בסוף ההתקנה יש שיחת בדיקה שבודקת את זה בטלפון שלך ומנסה כמה הגדרות. אם הטלפון שלך מהסוג הזה, דיבור ברמקול מקליט את שני הצדדים.</p>
